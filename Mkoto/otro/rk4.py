@@ -1,4 +1,8 @@
 import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
 
 def main():
 
@@ -20,6 +24,7 @@ def main():
 
     #plt.plot(t_l, dx_)
     plt.plot(t_l, x_l)
+    #Axes3D.plot_surface(X=t_l, Y=dx_, Z=x_l)
     plt.show()
 
 def f(t, x):
